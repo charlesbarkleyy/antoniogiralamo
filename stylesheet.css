@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    
+}
+
+
+#sectiondivs{
+    text-align: center;
+    background-color: #90A58A;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 100;
+    font-size: 40px;
+    color: whitesmoke;
+    text-align: left;
+    text-indent: 120px;
+}
+#Antonio-title{
+    font-weight: 100;
+    position: relative;
+    left: 10%;
+    width: fit-content;
+    font-size: 70px;
+}
+#Photo-title{
+    font-weight:lighter;
+    position: relative;
+    left: 60%;
+    width: fit-content;
+    font-size: 70px;
+}
+
+:-webkit-any(a){
+    text-decoration: none;
+    color: inherit;
+}
+nav ul{
+    text-align: right;
+} 
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li:hover, nav ul li a:hover{
+    color: thistle;
+}
+
+.testgrid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+
+.testgrid .leftpics img, .testgrid .rightpics img{
+    width:420px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.testgrid .leftpics img{
+    float: right;
+   margin-bottom: 22px;
+}
+
+.lefttitle ,.leftcap{
+    text-align: left;
+    margin-left: 10px;
+ 
+}
+
+.righttitle, .rightcap{
+    text-align: right;
+    margin-right: 10px;
+}
+
+.lefttitle, .righttitle{
+    font-size: 30px;
+    font-weight: bold;
+    color: grey;
+}
+
+.rightcap{
+    margin-bottom: 120px;
+}
+
+.albums{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.albums .Albumicon img{
+    width: 150px;
+    height: 250px;
+    object-fit: cover;
+}
+.albums .Albumicon:hover img{
+    width: 300px;
+}
+
+.albums .Albumicon{
+    text-align: center;
+    
+}
