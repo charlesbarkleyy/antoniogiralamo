@@ -12,22 +12,26 @@
     font-weight: 100;
     font-size: 40px;
     color: whitesmoke;
-    text-align: left;
-    text-indent: 120px;
+    width:100%;
+    text-align: center;
+    
 }
 #Antonio-title{
     font-weight: 100;
     position: relative;
-    left: 10%;
-    width: fit-content;
     font-size: 70px;
+    width: 100%;
+    text-align: left;
+    padding-left: 5%;
+   
 }
 #Photo-title{
     font-weight:lighter;
     position: relative;
-    left: 60%;
-    width: fit-content;
+    width:100%;
+    text-align: right;
     font-size: 70px;
+    padding-right: 5%;
 }
 
 :-webkit-any(a){
@@ -46,42 +50,78 @@ nav ul li:hover, nav ul li a:hover{
     color: thistle;
 }
 
+
+
 .testgrid{
     display: grid;
+    max-width: 100%;
     grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: repeat(5, 1fr);
 }
 
-.testgrid .leftpics img, .testgrid .rightpics img{
+.testgrid img{
     width:420px;
     height: auto;
     margin-bottom: 20px;
 }
 .testgrid .leftpics img{
     float: right;
-   margin-bottom: 22px;
+    margin-bottom: 22px;
 }
+
+
 
 .lefttitle ,.leftcap{
     text-align: left;
     margin-left: 10px;
- 
 }
 
 .righttitle, .rightcap{
     text-align: right;
     margin-right: 10px;
+    align-self: center;
 }
 
 .lefttitle, .righttitle{
-    font-size: 30px;
+    font-size: 2vw;
     font-weight: bold;
     color: grey;
 }
-
+.leftcap, .rightcap{
+    font-size: 1.5vw;
+}
 .rightcap{
     margin-bottom: 120px;
 }
 
+
+img.featured.row_one{
+    grid-row: 1 / 2;
+}
+img.featured.row_2{
+    grid-row: 2 / 3;
+}
+img.featured.row_3{
+    grid-row: 3 / 4;
+}
+img.featured.row_4{
+    grid-row: 4 / 5;
+}
+img.featured.row_5{
+    grid-row: 5 / 6;
+}
+
+img.featured{
+    width:100%;
+}
+.right{
+    grid-column: 3;
+}
+
+.left{
+    justify-self: right;
+    
+}
 .albums{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
