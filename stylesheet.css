@@ -4,13 +4,31 @@
     
 }
 
+:-webkit-any(a){
+    text-decoration: none;
+    color: inherit;
+}
+nav ul{
+    text-align: center;
+    padding:0;
+} 
+nav ul li{
+    display: inline-block;
+    padding: 1vw;
+    font-size: 1.5vw;
+}
+
+nav ul li:hover, nav ul li a:hover{
+    color: thistle;
+}
+
 
 #sectiondivs{
     background-color: #90A58A;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
     font-weight: 100;
-    font-size: 40px;
+    font-size: 3vw;
     color: whitesmoke;
     width:100%;
     text-align: center;
@@ -19,7 +37,7 @@
 #Antonio-title{
     font-weight: 100;
     position: relative;
-    font-size: 70px;
+    font-size: 4vw;
     width: 100%;
     text-align: left;
     padding-left: 5%;
@@ -30,27 +48,9 @@
     position: relative;
     width:100%;
     text-align: right;
-    font-size: 70px;
+    font-size: 4vw;
     padding-right: 5%;
 }
-
-:-webkit-any(a){
-    text-decoration: none;
-    color: inherit;
-}
-nav ul{
-    text-align: right;
-} 
-nav ul li{
-    display: inline-block;
-    padding: 20px;
-}
-
-nav ul li:hover, nav ul li a:hover{
-    color: thistle;
-}
-
-
 
 .testgrid{
     display: grid;
@@ -60,25 +60,17 @@ nav ul li:hover, nav ul li a:hover{
 }
 
 .testgrid img{
-    width:420px;
-    height: auto;
-    margin-bottom: 20px;
+    padding: 1vw 1.5vw;
 }
-.testgrid .leftpics img{
-    float: right;
-    margin-bottom: 22px;
-}
-
-
 
 .lefttitle ,.leftcap{
     text-align: left;
-    margin-left: 10px;
+    margin-left: 1vw;
 }
 
 .righttitle, .rightcap{
     text-align: right;
-    margin-right: 10px;
+    margin-right: 1vw;
     align-self: center;
 }
 
@@ -91,7 +83,7 @@ nav ul li:hover, nav ul li a:hover{
     font-size: 1.5vw;
 }
 .rightcap{
-    margin-bottom: 120px;
+    margin-bottom: 2vw;
 }
 
 
@@ -113,6 +105,7 @@ img.featured.row_5{
 
 img.featured{
     width:100%;
+    height:auto;
 }
 .right{
     grid-column: 3;
@@ -122,37 +115,23 @@ img.featured{
     justify-self: right;
     
 }
+
+
+
 .albums{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
+    grid-template-columns: repeat(3,  1fr);  
+}
+.albums .Albumicon{
+    text-align: center;
+    font-size: 1.5vw;
 }
 
 .albums .Albumicon img{
-    width: 150px;
-    height: 250px;
+    width: 15vw;
+    height: 25vw;
     object-fit: cover;
 }
 .albums .Albumicon:hover img{
-    width: 300px;
-}
-
-.albums .Albumicon{
-    text-align: center;
-}
-.albumGrid { 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
-    column-gap: 10px;
-}
-.albumGrid div img{
-    width: 420px;
-    height: auto;
-    padding-bottom: 20px;
-    
-}
-#smallpic{
-    width: 210px;
-   
+    width: 30vw;
 }
