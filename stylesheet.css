@@ -23,7 +23,7 @@ nav ul li:hover, nav ul li a:hover{
 }
 
 
-#sectiondivs{
+.sectiondivs{
     background-color: #90A58A;
     padding-top: 2vw;
     padding-bottom: 2vw;
@@ -134,4 +134,18 @@ img.featured{
 }
 .albums .Albumicon:hover img{
     width: 30vw;
+}
+
+.personalize{
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #90A58A;
+    color: whitesmoke;
+    padding: .5vw 2vw;
+    font-size: 1vw;
+    border: none;
+}
+.personalize:hover{
+    background-color: thistle;
 }
