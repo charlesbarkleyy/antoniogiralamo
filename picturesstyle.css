@@ -1,0 +1,22 @@
+.picturesGrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5vw;
+    max-width: 100%;
+}
+.picturesGrid img{
+    width: 100%;
+}
+img#main{
+    grid-column: 1/-1;
+}
+img.medium{
+    grid-column: span 2;
+}
+img.small{
+    width:80%;
+}
+img.xsmall{
+    width:50%;
+}
+

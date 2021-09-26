@@ -34,7 +34,7 @@ nav ul li:hover, nav ul li a:hover{
     text-align: center;
     
 }
-#Antonio-title{
+#title-1{
     font-weight: 100;
     position: relative;
     font-size: 4vw;
@@ -43,7 +43,7 @@ nav ul li:hover, nav ul li a:hover{
     padding-left: 5%;
    
 }
-#Photo-title{
+#title-2{
     font-weight:lighter;
     position: relative;
     width:100%;
