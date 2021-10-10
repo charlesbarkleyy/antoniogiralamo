@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    
+}
+
+:-webkit-any(a){
+    text-decoration: none;
+    color: inherit;
+}
+nav ul{
+    text-align: center;
+    padding:0;
+} 
+nav ul li{
+    display: inline-block;
+    padding: 1vw;
+    font-size: 1.5vw;
+}
+
+nav ul li:hover, nav ul li a:hover{
+    color: thistle;
+}
+
+
+.sectiondivs{
+    background-color: #90A58A;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    font-weight: 100;
+    font-size: 3vw;
+    color: whitesmoke;
+    width:100%;
+    text-align: center;
+    
+}
+#title-1{
+    font-weight: 100;
+    position: relative;
+    font-size: 4vw;
+    width: 100%;
+    text-align: left;
+    padding-left: 5%;
+   
+}
+#title-2{
+    font-weight:lighter;
+    position: relative;
+    width:100%;
+    text-align: right;
+    font-size: 4vw;
+    padding-right: 5%;
+}
+
+.testgrid{
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.testgrid img{
+    padding: 1vw 1.5vw;
+}
+
+.lefttitle ,.leftcap{
+    text-align: left;
+    margin-left: 1vw;
+}
+
+.righttitle, .rightcap{
+    text-align: right;
+    margin-right: 1vw;
+    align-self: center;
+}
+
+.lefttitle, .righttitle{
+    font-size: 2vw;
+    font-weight: bold;
+    color: grey;
+}
+.leftcap, .rightcap{
+    font-size: 1.5vw;
+}
+.rightcap{
+    margin-bottom: 2vw;
+}
+
+
+img.featured.row_one{
+    grid-row: 1 / 2;
+}
+img.featured.row_2{
+    grid-row: 2 / 3;
+}
+img.featured.row_3{
+    grid-row: 3 / 4;
+}
+img.featured.row_4{
+    grid-row: 4 / 5;
+}
+img.featured.row_5{
+    grid-row: 5 / 6;
+}
+
+img.featured{
+    width:100%;
+    height:auto;
+}
+.right{
+    grid-column: 3;
+}
+
+.left{
+    justify-self: right;
+    
+}
+
+
+
+.albums{
+    display: grid;
+    grid-template-columns: repeat(3,  1fr);  
+}
+.albums .Albumicon{
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.albums .Albumicon img{
+    width: 15vw;
+    height: 25vw;
+    object-fit: cover;
+}
+.albums .Albumicon:hover img{
+    width: 30vw;
+}
+
+.personalize{
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #90A58A;
+    color: whitesmoke;
+    padding: .5vw 2vw;
+    font-size: 1vw;
+    border: none;
+}
+.personalize:hover{
+    background-color: thistle;
+}
